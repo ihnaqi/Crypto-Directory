@@ -68,7 +68,6 @@ const Home = () => {
          </section>
          <NewsTile />
          <ProjectAnalysis />
-         <h2> Hello World! </h2>
       </main>
    )
 }
