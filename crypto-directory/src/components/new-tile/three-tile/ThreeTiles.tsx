@@ -1,10 +1,10 @@
 import './three-tile.css'
 
-const ThreeTiles = ({ list }) => {
+const ThreeTiles = ({ list }: { list: { title: string; subtitle: string; date: string }[] }) => {
    return (
       <section className='tile-container'>
          {
-            list?.map(item => {
+            list.map(item => {
                return (
                   <div className='item-wrapper'>
                      <div className='item-title-wrapper'>
