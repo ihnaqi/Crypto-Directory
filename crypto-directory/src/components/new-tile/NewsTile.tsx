@@ -1,7 +1,6 @@
 import './tile.css'
 import data from './loader'
 import { nanoid } from 'nanoid'
-import { NavLink } from 'react-router-dom'
 
 const NewsTile = () => {
    const news = [data[0], data[1]]
@@ -24,7 +23,10 @@ const NewsTile = () => {
                               <h3> {item.title?.editorState.root.children[0].children.map(obj => obj.text)} </h3>
                            </div>
                            <div className='news-tile-text-description'>
-                              <NavLink to={item.articleUrl} replace className='news-tile-link'><span>Read More 🔗</span> </NavLink>
+                              {/* <NavLink to={`${item.articleUrl}`} relative='path' className='news-tile-link' ><span>Read More 🔗</span> </NavLink> */}
+                              <span className='news-tile-link' onClick={
+                                 () => window.open(`${item.articleUrl}`, '_blank')
+                              }>Read More 🔗</span>
                               <p className='news-tile-date'>
                                  {
                                     getDate(item.updatedAt)

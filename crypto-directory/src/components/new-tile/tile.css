@@ -67,14 +67,14 @@
    align-content: center;
 }
 
-.news-tile-text-description > a {
+.news-tile-text-description > .news-tile-link {
    font-size: 0.8rem;
    font-weight: 500;
    color: #535252;
-   text-decoration: none;
+   cursor: pointer;
 }
 
-.news-tile-text-description > a:hover {
+.news-tile-text-description > .news-tile-link:hover {
    color: #58b6f5;
 }
 .news-tile-date {

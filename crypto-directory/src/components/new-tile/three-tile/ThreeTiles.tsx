@@ -1,3 +1,4 @@
+import { nanoid } from 'nanoid';
 import './three-tile.css'
 
 const ThreeTiles = ({ list }: { list: { title: string; subtitle: string; date: string }[] }) => {
@@ -6,7 +7,7 @@ const ThreeTiles = ({ list }: { list: { title: string; subtitle: string; date: s
          {
             list.map(item => {
                return (
-                  <div className='item-wrapper'>
+                  <div key={nanoid()} className='item-wrapper'>
                      <div className='item-title-wrapper'>
                         <h5>{item.title}</h5>
                      </div>
