@@ -1,0 +1,42 @@
+.banner-card {
+   position: relative;
+   min-width: 300px;
+   min-height: 160px;
+   background-image: var(--img);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-color: #686969;
+   background-blend-mode: multiply;
+   border-radius: 15px;
+   cursor: pointer;
+   box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+   .banner-card {
+      min-width: 240px;
+      min-height: 120px;
+   }
+}
+.banner-card-content-identifier {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: #242525;
+   padding: 5px;
+   color: #fff;
+   border-top-left-radius: inherit;
+   border-bottom-right-radius: inherit;
+}
+
+.banner-card-content-title {
+   position: absolute;
+   bottom: 10px;
+   left: 10px;
+   color: inherit;
+}
+
+.card-identifier-text {
+   font-size: 0.9em;
+}

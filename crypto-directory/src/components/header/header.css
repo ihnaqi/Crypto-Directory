@@ -1,0 +1,41 @@
+.header-container {
+   padding: 15px 20px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header-logo-container {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   cursor: pointer;
+   overflow: hidden;
+}
+
+.header-logo {
+   height: 100%;
+   width: 100%;
+   object-fit: fill cover;
+}
+
+.header-navs-container {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.icon {
+   font-size: 30px;
+   cursor: pointer;
+}
+
+.link {
+   text-decoration: none;
+   color: inherit;
+}

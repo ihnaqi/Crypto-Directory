@@ -1,0 +1,54 @@
+.tile-wrapper {
+   border-bottom: 2px solid #a9aaa9;
+   padding-block: 10px;
+   min-height: 90px;
+}
+
+.tile-wrapper:last-of-type {
+   border: none;
+}
+
+.tile-item-conatiner {
+   height: 100%;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+
+.tile-right-container {
+   flex: 3;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+}
+
+.tile-tag {
+   color: #242323;
+   font-size: 0.6rem;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+
+.tile-title {
+   color: #242323;
+   font-size: 1rem;
+   padding-bottom: 15px;
+}
+
+.tile-date {
+   color: #242323;
+   font-size: 0.7rem;
+   justify-self: flex-end;
+}
+
+.tile-left-container {
+   flex: 2;
+   height: 100%;
+}
+
+.tile-left-container > img {
+   height: 100%;
+   width: 100%;
+   border-radius: 15px;
+}
+

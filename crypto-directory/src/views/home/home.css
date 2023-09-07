@@ -1,0 +1,152 @@
+.home-container {
+   background-color: #bebebe;
+   min-height: 100vh;
+   max-width: 100vw;
+}
+
+.home-banner {
+   background-color: #8c93f0;
+   color: #fff;
+   background-image: url("../../assets/images/cryptocosmos.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   background-blend-mode: multiply;
+   padding-bottom: 20px;
+}
+
+.home-banner-top {
+   margin-bottom: 10px;
+   padding: 20px;
+}
+
+.home-banner-content {
+   padding-bottom: 10px;
+}
+
+.home-banner-card-container {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+   overflow-x: scroll;
+   padding-left: 20px;
+}
+
+.home-banner-card-container::-webkit-scrollbar {
+   display: none;
+}
+
+.home-banner-card-container:last-child {
+   padding-right: 20px;
+}
+
+
+.home-featured-container {
+   padding: 10px;
+   display: flex;
+   flex-wrap: wrap;
+   padding-bottom: 10px;
+}
+
+.home-fatured-left-wrapper {
+   flex: 3;
+   padding-right: 10px;
+}
+
+.home-featured-title-container {
+   padding-block: 10px;
+   border-bottom: 2px solid #a9aaa9;
+}
+
+.home-featured-title {
+   color: #242323;
+   font-size: 1.2rem;
+}
+
+
+.home-featured-left-content-wrapper {
+   padding-block: 20px;
+}
+
+.home-featured-left-content {
+   height: 45vh;
+   width: 100%;
+   border-radius: 15px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background-color: #242323;
+   background-image: url('../../assets/images/blockchains.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: white;
+   background-blend-mode: lighten;
+}
+
+.home-featured-left-content-top-left-logo {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+   margin-left: 10px;
+   margin-top: 10px;
+}
+
+.home-featured-left-content-top-left-logo img {
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+}
+
+.home-featured-left-content-bottom-left {
+   margin-bottom: 10px;
+   margin-left: 10px;
+}
+
+.home-featured-left-content-text-section-container {
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+}
+
+.home-desc {
+   text-align: justify;
+}
+
+.date {
+   color: #4a4b4a;
+   font-size: 0.8rem;
+}
+
+.home-featured-right-wrapper {
+   flex: 2;
+   padding-left: 10px;
+   border-bottom: 2px solid #a9aaa9;
+}
+
+@media screen and (min-width: 769px) {
+   .home-fatured-left-wrapper {
+      border-bottom: 2px solid #a9aaa9;
+   }
+}
+
+@media screen and (max-width: 768px) {
+
+   .home-featured-container {
+      flex-direction: column;
+   }
+
+   .home-featured-left-wrapper {
+      flex: 1;
+      padding-right: 0;
+   }
+   .home-featured-right-wrapper {
+      flex: 1;
+      padding-left: 0;
+   }
+
+   .home-featured-left-content {
+      height: 30vh;
+      width: 100%;
+   }
+}
