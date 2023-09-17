@@ -11,6 +11,8 @@ import evsb from '../../assets/images/evsb.jpg'
 import nft from '../../assets/images/chain.jpg'
 import NewsTile from '../../components/new-tile/NewsTile'
 import ProjectAnalysis from '../../components/project-analysis/ProjectAnalysis'
+import Feature from '../../components/features/Feature'
+import FeaturedStories from '../../components/featured-stories/FeaturedStories'
 
 const Home = () => {
    return (
@@ -68,6 +70,8 @@ const Home = () => {
          </section>
          <NewsTile />
          <ProjectAnalysis />
+         <Feature />
+         <FeaturedStories />
       </main>
    )
 }
