@@ -24,7 +24,7 @@ const FeaturedStories = () => {
                </div>
             </div>
             <div className="featured-main-right-content">
-               <img src='./src/assets/images/itheum_founders.jpg' alt='founders' />
+               <img src='https://raw.githubusercontent.com/ihnaqi/Crypto-Directory/main/crypto-directory/src/assets/images/itheum_founders.jpg' alt='founders' />
             </div>
          </div>
       </div>
