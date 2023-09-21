@@ -4,7 +4,7 @@ const data: {
     imageURL: string
  }[] = [
     {
-        imageURL: "https://raw.githubusercontent.com/ihnaqi/Crypto-Directory/main/crypto-directory/src/assets/images/crypto_credit_card_benefits.jpg",
+        imageURL: "https://raw.githubusercontent.com/ihnaqi/Crypto-Directory/main/crypto-directory/src/assets/images/crypto_credit_card_benefit.jpg",
         title: "Understanding the Crypto Credit Cards And Their Benefits",
         date: "Jul 31, 2023"
     },
