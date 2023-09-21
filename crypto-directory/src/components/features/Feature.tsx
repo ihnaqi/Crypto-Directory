@@ -1,16 +1,16 @@
+import { nanoid } from 'nanoid'
 import './feature.css'
-import data from './data'
 
-const Feature = () => {
+const Feature = ({data}: {data: {imageURL: string, title: string, date: string}[]}) => {
 
    return (
       <div className="feature-container">
          <h3 className="feature-title">Features </h3>
          <div className="feature-content-container">
             {
-               data.map(item => {
+               data.map((item : {imageURL: string, title: string, date: string}) => {
                   return(
-                     <div className="feature-content">
+                     <div key={nanoid()} className="feature-content">
                         <img src={item.imageURL} alt="feature" className="feature-image"/>
                         <div className="feature-text-container">
                            <h3 className="feature-text-title">{item.title}</h3>

@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Preventing ES build Errors to occur on build
+yarn.lock

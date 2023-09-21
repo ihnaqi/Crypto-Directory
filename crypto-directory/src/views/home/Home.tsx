@@ -1,18 +1,23 @@
-import Card from '../../components/home-banner-card/Card'
-import Slider from '../../components/slider/Slider'
 import './home.css'
+import featureData from '../../components/features/data'
+import guideData from '../../components/features/guide_data'
+
 import img1 from '../../assets/images/news.jpg'
 import img2 from '../../assets/images/undervalue.jpg'
 import img3 from '../../assets/images/chain.jpg'
 import img4 from '../../assets/images/cLogo.png'
-import Tile from '../../components/tile/Tile'
 import blockchain from '../../assets/images/blockchains.jpg'
 import evsb from '../../assets/images/evsb.jpg'
 import nft from '../../assets/images/chain.jpg'
+
+import Card from '../../components/home-banner-card/Card'
+import Slider from '../../components/slider/Slider'
+import Tile from '../../components/tile/Tile'
 import NewsTile from '../../components/new-tile/NewsTile'
 import ProjectAnalysis from '../../components/project-analysis/ProjectAnalysis'
 import Feature from '../../components/features/Feature'
 import FeaturedStories from '../../components/featured-stories/FeaturedStories'
+import { nanoid } from 'nanoid'
 
 const Home = () => {
    return (
@@ -70,8 +75,9 @@ const Home = () => {
          </section>
          <NewsTile />
          <ProjectAnalysis />
-         <Feature />
+         <Feature key={nanoid()} data={featureData}/>
          <FeaturedStories />
+         <Feature key={nanoid()} data={guideData}/>
       </main>
    )
 }
