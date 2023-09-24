@@ -22,7 +22,7 @@ const TrendyVideos = () => {
                     <p className='date'> 2 days ago </p>
                 </div>
                 <div className="top-right-container">
-                    <iframe className='top-right-video' src="https://www.youtube.com/embed/63NwhDsOoaE?si=fYUtjiNioGUiYsMR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe className='top-right-video' src="https://www.youtube.com/embed/63NwhDsOoaE?si=fYUtjiNioGUiYsMR" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                 </div>
             </div>
             <div className="bottom-section-container">
@@ -31,7 +31,7 @@ const TrendyVideos = () => {
                         return (
                             <div key={nanoid()} className="bottom-data-item-wrapper">
                                 <div className="video-container">
-                                    <iframe className='bottom-video' src={`${item.channel_link}?si=5B5m38wrhjmdv6Zd`} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <iframe className='bottom-video' src={`${item.channel_link}?si=5B5m38wrhjmdv6Zd`} title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
                                 </div>
                                 <div className="video-data-container">
                                     <strong className='logo-and-text video-channel-name'> <svg className="yt-icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 48 48">
