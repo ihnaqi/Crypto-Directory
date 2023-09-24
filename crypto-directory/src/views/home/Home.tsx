@@ -18,6 +18,7 @@ import ProjectAnalysis from '../../components/project-analysis/ProjectAnalysis'
 import Feature from '../../components/features/Feature'
 import FeaturedStories from '../../components/featured-stories/FeaturedStories'
 import { nanoid } from 'nanoid'
+import TrendyVideos from '../../components/trendy-videos/TrendyVideos'
 
 const Home = () => {
    return (
@@ -78,6 +79,7 @@ const Home = () => {
          <Feature key={nanoid()} data={featureData}/>
          <FeaturedStories />
          <Feature key={nanoid()} data={guideData}/>
+         <TrendyVideos />
       </main>
    )
 }
